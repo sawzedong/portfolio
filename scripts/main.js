@@ -1,5 +1,5 @@
 $(function(){
-    $("#navigation").load("nav.html", function() {
+    $("#navigation").load("../nav.html", function() {
         $('a[href*="'+window.location.pathname+'"]').addClass("current");
         if(window.location.pathname === "/projectinfo.html") {
             $('a[href*="/projects.html"]').addClass("current");

@@ -1,0 +1,62 @@
+[
+    {"id": 0,
+    "name": "Singapore Games Creation Competition",
+    "overview": "Creation of a digital game that follows a set theme (2019)",
+    "imglink": "0-SGCC2019.png",
+    "desclink": "0-SGCC2019.html"
+    },
+    {"id": 1,
+    "name": "National Olympiad in Informatics",
+    "overview": "Competitive programming with challenging questions (2020)",
+    "imglink": "1-NOI2020.jpeg",
+    "desclink": "1-NOI2020.html"
+    },
+    {"id": 2,
+    "name": "Student Council Internship",
+    "overview": "Experience of serving the school in Student Council (2020)",
+    "imglink": "2-SCIntern2020.jpeg",
+    "desclink": "2-SCIntern2020.html"
+    },
+    {"id": 3,
+    "name": "YDSP Scholarship",
+    "overview": "Received scholarship for interest in science and technology (2021)",
+    "imglink": "3-YDSPScholarship2021.jpg",
+    "desclink": "3-YDSPScholarship2021.html"
+    },
+    {"id": 4,
+    "name": "Infocomm Club Chairperson",
+    "overview": "Leadership role in Infocomm Club CCA as chairperson (2021)",
+    "imglink": "4-ICCChair2021.jpeg",
+    "desclink": "4-ICCChair2021.html"
+    },
+    {"id": 5,
+    "name": "Splash Awards",
+    "overview": "Ideation and prototyping of an AI solution to a real-world problem (2021)",
+    "imglink": "5-Splash2021.png",
+    "desclink": "5-Splash2021.html"
+    },
+    {"id": 6,
+    "name": "DSTA Virtual Camp",
+    "overview": "Virtual Science and Technology camp by DSTA to explore VR/AR (2021)",
+    "imglink": "6-DSTAVirtualCamp2021.jpeg",
+    "desclink": "6-DSTAVirtualCamp2021.html"
+    },
+    {"id": 7,
+    "name": "Science Mentorship Programme",
+    "overview": "Science research opportunity supervised by mentor (2022)",
+    "imglink": "7-SMP2022.jpeg",
+    "desclink": "7-SMP2022.html"
+    },
+    {"id": 8,
+    "name": "DSO World of Science",
+    "overview": "On-site sessions with hands-on activities on Computer Security (2022)",
+    "imglink": "8-DSOWOS2022.jpeg",
+    "desclink": "8-DSOWOS2022.html"
+    },
+    {"id": 9,
+    "name": "Singapore Junior Science Olympiads",
+    "overview": "Singapore Junior Physics and Chemistry Olympiad (2022)",
+    "imglink": "9-SJSOs2022.jpg",
+    "desclink": "9-SJSOs2022.html"
+    }
+]

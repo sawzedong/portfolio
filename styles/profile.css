@@ -1,0 +1,96 @@
+body {
+    margin-top: 4em;
+}
+.profilesection {
+    width: 100vw;
+    height: fit-content;
+}
+#selfintro {
+    display: flex;
+}
+.leftsection {
+    padding: 1em 1.5em 1em 3em;
+}
+.rightsection {
+    padding: 1em 3em 1em 1.5em;
+}
+#selfintro .leftsection {
+    width: 25%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#selfintro .leftsection img {
+    max-width: 100%;
+}
+#selfintro .rightsection {
+    width: 75%;
+    margin: 0;
+}
+
+#listsection {
+    display: flex;
+    background-color: rgba(0,0,255,0.05);
+}
+#listsection .leftsection, #listsection .rightsection {
+    width: 50%;
+    margin-bottom: 1em;
+}
+.profilesection ul, .profilesection p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+#skills {
+    border-collapse: collapse;
+}
+
+#skills td, #skills th {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+#skills th {
+    font-weight: normal;
+    text-decoration: 1px solid black underline;
+}
+
+#program {
+    padding: 0 0.5em 0.3em 0;
+}
+#technical {
+    padding: 1em 0.5em 0.3em 0;
+}
+td {
+    padding: 0.3em 0.5em 0.3em 0;
+    min-width: 25vw;
+}
+
+.checked {
+    color: #d48002;
+}
+
+h2.reducedmargin {
+    margin-bottom: 0.6em;
+}
+
+#supportingdocuments {
+    padding: 1em 3em;
+}
+
+.document h3 {
+    display: inline-block;
+    margin: 0;
+}
+
+.document {
+    margin: 1em 0;
+}
+
+iframe {
+    width: 100%;
+    height: 50vh;
+    border: 1px solid black;
+}

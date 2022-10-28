@@ -1,0 +1,87 @@
+/* MAIN */
+
+* {
+    box-sizing: border-box !important;
+    padding: 0;
+    margin: 0;
+}
+
+h2, p, h3 {
+    margin: 1em 0;
+}
+ul {
+    margin-left: 2em;
+}
+
+a {
+    color: #d48002;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.dnone {
+    display: none !important;
+}
+
+
+/* NAVBAR */
+
+nav, nav * {
+    z-index: 11000;
+}
+
+nav {
+    display: flex;
+    width: 100vw;
+    margin: 0;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: #02062b;
+    height: 4em;
+    position: fixed;
+    top: 0;
+}
+
+nav h1 {
+    color: white;
+}
+
+
+#nav-right, #nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.navlink a {
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+.navlink a.current {
+    color: #ffd28f;
+}
+
+.navlink:hover :not(.current) {
+    color: #ffebcc;
+}
+
+#navname {
+    color: white;
+    text-decoration: none;
+}

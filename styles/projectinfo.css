@@ -1,0 +1,38 @@
+#imagecontainer {
+    width: 50vw;
+    height: calc(100vh - 4em);
+    height: -moz-calc(100vh - 4em);
+    overflow: hidden;
+    position: fixed;
+    top: 4em;
+    left: 0;
+    margin: 0;
+    object-position: center center;
+    text-align: center;
+}
+#projectimage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    object-position: center center;
+    border: none;
+}
+
+#information {
+    position: absolute;
+    width: 50vw;
+    top: 4em;
+    left: 50vw;
+    padding: 1em 2em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p.projdesc {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+}

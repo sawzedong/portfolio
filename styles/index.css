@@ -1,0 +1,254 @@
+h1, h2, h3, h4, h5, h6, p, span {
+    color: white;
+}
+
+/* HEADER SECTION */
+
+#indexheading {
+    width: 100%;
+    height: calc(100vh - 4em);
+    height: -moz-calc(100vh - 4em);
+    background-color: #060732;
+}
+
+#lockimage {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: fit-content;
+    width: 50%;
+    top: calc(50vh + 2em);
+    top: -moz-calc(50vh + 2em);
+    margin: auto;
+    animation-name: lockDrops;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    position: relative;
+    transform: translateY(-60%);
+    z-index: 9999;
+}
+
+@keyframes lockDrops {
+    20% {
+        transform: rotateZ(-30deg);
+        opacity: 100%;
+    } 
+    80% {
+        transform: rotateZ(-7.5deg);
+        opacity: 0;
+    }
+    100% {
+        top: 60vh;
+        opacity: 0;
+    }
+
+}
+
+#lockimagebottom {
+    height: 22vh;
+    align-self: center;
+    -webkit-filter: drop-shadow(0 0 8px #6ebaf599);
+    filter: drop-shadow(0 0 8px #6ebaf599);
+}
+
+#lockimagetop {
+    -webkit-filter: drop-shadow(0 0 8px #6ebaf599);
+    filter: drop-shadow(0 0 8px #6ebaf599);
+    height: 16vh;
+    align-self: center;
+    animation-name: lockUnlocks;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+} 
+
+@keyframes lockUnlocks {
+    0% {margin-bottom: -6vh; }
+    100% {margin-bottom: -2vh;}
+}
+
+/* .indexheaderoverlay {
+    position: absolute;
+    width: 100vw;
+    height: calc(100vh - 4em);
+    height: -moz-calc(100vh - 4em);
+    top: 4em;
+    left: 0;
+    text-align: center;
+    z-index: 8000;
+} */
+
+#overlayimgdiv {
+    position: absolute;
+    width: 100vw;
+    height: calc(100vh - 4em);
+    height: -moz-calc(100vh - 4em);
+    top: 4em;
+    left: 0;
+    text-align: center;
+    z-index: 8000;
+    width: 100vw;
+    height: calc(100vh - 4em);
+    height: -moz-calc(100vh - 4em);
+    background-image: url("/img/overlay.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+}
+
+#overlaybgdiv {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #06073200;
+    animation-name: overlayFills;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 2.5s;
+    z-index: 8000;
+}
+
+@keyframes overlayFills {
+    0% {
+        background-color: #06073200;
+    }
+    100% {
+        background-color: #060732ff;
+    }
+}
+
+#headingcontent {
+    height: calc(100vh - 4em);
+    height: -moz-calc(100vh - 4em);
+    width: 100%;
+    position: absolute;
+    top: 4em;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#pfpimgdiv, #nameintrodiv {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+#pfpimgdiv {
+    justify-content: flex-end;
+    animation-name: pfpImgDivAppears;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 4s;
+    z-index: 9000;
+}
+
+@keyframes pfpImgDivAppears {
+    0% {
+        padding-right: 5em;
+        opacity: 0;
+    }
+    100% {
+        padding-right: 2em;
+        opacity: 100%;
+    }
+}
+
+#nameintrodiv {
+    justify-content: flex-start;
+    animation-name: nameIntroDivAppears;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 4s;
+    z-index: 9001;
+}
+
+@keyframes nameIntroDivAppears {
+    0% {
+        padding-left: 5em;
+        opacity: 0;
+    }
+    100% {
+        padding-left: 2em;
+        opacity: 100%;
+    }
+}
+
+#pfpimg {
+    max-height: 90%;
+    max-width: 80%;
+}
+
+#nameintrodiv h2 {
+    font-size: 3em;
+}
+
+
+a {
+    color: #e8b52c;
+}
+
+
+/* PROFILE SECTION */
+
+#profile {
+    background-color: #0e113e;
+}
+
+#projects {
+    background-color: #0d092e;
+}
+
+.introsection {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+.introsection div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.introsection-right {
+    align-items: baseline;
+    padding-left: 5%;
+}
+
+.introsection-left {
+    align-items:flex-end;
+    padding-right: 5%;
+}
+
+.introsection h2 {
+    max-width: 80%;
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.introsection p {
+    margin: 0.5em 0;
+}
+
+.introsection span, .introsection p {
+    max-width: 80%;
+    font-size: 1.4em;
+    line-height: 1.7em;
+}
+
+.introsection-left p {
+    text-align: right;
+}
+
+#profileicon {
+    max-width: 45%;
+}
+
+/* PROJECTS SECTION */

@@ -10,8 +10,7 @@ body {
 
 #indexheading {
     width: 100%;
-    height: calc(100vh - 4em);
-    height: -moz-calc(100vh - 4em);
+    height: 100vh;
     background-color: #060732;
 }
 

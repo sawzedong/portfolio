@@ -1,10 +1,11 @@
 $(function(){
     $("#navigation").load("./nav.html", function() {
-        $('a[href*="'+window.location.pathname+'"]').addClass("current");
-        if(window.location.pathname === "/projectinfo.html") {
+        const currentLink = window.location.pathname.replace("/portfolio", "")
+        $('a[href*="'+currentLink+'"]').addClass("current");
+        if(currentLink === "/projectinfo.html") {
             $('a[href*="/projects.html"]').addClass("current");
         }
-        if(window.location.pathname === "/") {
+        if(currentLink === "/") {
             $('a[href*="/"]').removeClass("current");
             $('a[href*="/index.html"]').addClass("current");
         }

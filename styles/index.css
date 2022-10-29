@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6, p, span {
     width: 100vw;
     height: calc(100vh - 4em);
     height: -moz-calc(100vh - 4em);
-    background-image: url("/img/overlay.png");
+    background-image: url("./img/overlay.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;

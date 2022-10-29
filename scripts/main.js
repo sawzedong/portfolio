@@ -12,7 +12,8 @@ $(function(){
     });
 
     AOS.init({
-        offset: 150,
+        offset: 50,
+        delay: 50,
         duration: 500,
         once: true,
         easing: "ease-in-out"

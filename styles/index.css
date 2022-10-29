@@ -2,6 +2,10 @@ h1, h2, h3, h4, h5, h6, p, span {
     color: white;
 }
 
+body {
+    background-color: rgb(6, 8, 51);
+}
+
 /* HEADER SECTION */
 
 #indexheading {
@@ -68,17 +72,6 @@ h1, h2, h3, h4, h5, h6, p, span {
     100% {margin-bottom: -2vh;}
 }
 
-/* .indexheaderoverlay {
-    position: absolute;
-    width: 100vw;
-    height: calc(100vh - 4em);
-    height: -moz-calc(100vh - 4em);
-    top: 4em;
-    left: 0;
-    text-align: center;
-    z-index: 8000;
-} */
-
 #overlayimgdiv {
     position: absolute;
     width: 100vw;
@@ -91,7 +84,7 @@ h1, h2, h3, h4, h5, h6, p, span {
     width: 100vw;
     height: calc(100vh - 4em);
     height: -moz-calc(100vh - 4em);
-    background-image: url("../img/overlay.png");
+    background-image: url("../img/overlay.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
@@ -193,7 +186,7 @@ a {
 }
 
 
-/* PROFILE SECTION */
+/* LINKING SECTIONS */
 
 #profile {
     background-color: #0e113e;
@@ -250,5 +243,3 @@ a {
 .sectionicon {
     max-width: 45%;
 }
-
-/* PROJECTS SECTION */

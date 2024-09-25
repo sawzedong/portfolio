@@ -1,6 +1,6 @@
 $(function () {
     $.getJSON("./projects/projects.json", function (jd) {
-        for (var i = 0; i < jd.length; i++) {
+        for (var i = jd.length - 1; i >= 0; i--) {
             let contents = $("#template").html();
             let copy = $(
                 `<a class="project-card" id=card${i} href="./projectinfo.html?id=${i}"></a>`

@@ -1,0 +1,124 @@
+[
+    {
+        "name": "Swift Accelerator Programme",
+        "overview": "Learnt Swift and developed a prototype app over a year-long programme",
+        "year": "2020 - 2021",
+        "date": "Jan 2020 - Jan 2021",
+        "id": "00_SAP"
+    },
+    {
+        "name": "Student Council Internship",
+        "overview": "Gained experience serving the school in Student Council",
+        "year": "2020 - 2021",
+        "date": "Mar 2020 - Mar 2021",
+        "id": "01_SC"
+    },
+    {
+        "name": "Splash Awards",
+        "overview": "Ideated and prototyped an AI solution to a real-world cybersecurity problem",
+        "year": "2021",
+        "date": "Jul - Sep 2021",
+        "id": "02_SPLASH"
+    },
+    {
+        "name": "DSTA Science and Technology Camp",
+        "overview": "Attended a Virtual Science and Technology camp by DSTA to explore VR/AR",
+        "year": "2021",
+        "date": "Dec 2021",
+        "id": "03_DSTASTC"
+    },
+    {
+        "name": "Y3 Orientation Camp",
+        "overview": "Led a committee to plan a orientation for Y3 students' bonding in new classes",
+        "year": "2021",
+        "date": "Sep 2021 - Jan 2022",
+        "id": "04_Y3OC"
+    },
+    {
+        "name": "Science Mentorship Programme",
+        "overview": "Researched on fungi protoplast fusion in a school-based mentored environment",
+        "year": "2022",
+        "date": "Jan - Aug 2022",
+        "id": "05_SMP"
+    },
+    {
+        "name": "Research@YDSP",
+        "overview": "Researched as part of an internship at DSTA to analyse C-UAS defences",
+        "year": "2022",
+        "date": "Sep - Dec 2022",
+        "id": "06_RYDSP"
+    },
+    {
+        "name": "Science Lab Internship",
+        "overview": "Interned at a school-based science lab to test novel research ideas",
+        "year": "2023",
+        "date": "Jan 2023",
+        "id": "07_MOLLAB"
+    },
+    {
+        "name": "International Mathematical Modelling Challenge",
+        "overview": "Used mathematical models to simulate and quantitatively comprehend land usage",
+        "year": "2023",
+        "date": "Mar 2023",
+        "id": "08_IMMC"
+    },
+    {
+        "name": "National Olympiad in Informatics",
+        "overview": "Participated and received awards in a national competitive programming competition",
+        "year": "2020, 2022, 2023",
+        "date": "Feb - Mar 2020, 2022, 2023",
+        "id": "09_NOI"
+    },
+    {
+        "name": "DSO World of Science",
+        "overview": "Learnt about Computer Security and Electromagnetism through one-week camps",
+        "year": "2022, 2023",
+        "date": "Jun 2022, 2023",
+        "id": "10_DSOWOS"
+    },
+    {
+        "name": "Robotics STEAMxD Workshop",
+        "overview": "Participated in an interdisciplinary workshop centred on robotics",
+        "year": "2024",
+        "date": "Jan 2024",
+        "id": "11_STEAMxD"
+    },
+    {
+        "name": "WASP: Wastewater Treatment Project",
+        "overview": "Innovated a project to treat wastewater using more natural methods",
+        "year": "2023 - 2024",
+        "date": "Aug 2023 - Apr 2024",
+        "id": "12_WASP",
+        "featured": true
+    },
+    {
+        "name": "Infocomm Club Chairperson",
+        "overview": "Led the executive committee in Infocomm Club CCA as chairperson",
+        "year": "2021 - 2022, 2023 - 2024",
+        "date": "Jun 2021 - Jun 2022, Jun 2023 - Jun 2024",
+        "id": "13_ICC"
+    },
+    {
+        "name": "Work Attachment at Dyson",
+        "overview": "Attended a packaging design work attachment at Dyson",
+        "year": "2024",
+        "date": "Jun 2024",
+        "id": "14_DYSON"
+    },
+    {
+        "name": "BuildingBloCS",
+        "overview": "Led in a student-based organisation aimed at promoting computing to students",
+        "year": "2023 - 2024",
+        "date": "Mar 2023 - Jun 2024",
+        "id": "15_BBCS",
+        "featured": true
+    },
+    {
+        "name": "MOTRIT-GPT: Research Project at IHPC",
+        "overview": "Presented my paper regarding Large Language Models for Optical Thin-film Design at a conference",
+        "year": "2023 - 2024",
+        "date": "Mar 2023 - Dec 2024",
+        "id": "16_MOTRIT",
+        "featured": true
+    }
+]

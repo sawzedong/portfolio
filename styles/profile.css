@@ -1,0 +1,147 @@
+body {
+    margin-top: 4em;
+    background: #212129;
+}
+.profilesection {
+    width: 100vw;
+    height: fit-content;
+}
+#selfintro {
+    display: flex;
+}
+.leftsection {
+    padding: 1em 1.5em 1em 3em;
+}
+.rightsection {
+    padding: 1em 3em 1em 1.5em;
+}
+#selfintro .leftsection {
+    width: 25%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#selfintro .leftsection img {
+    max-width: 100%;
+}
+#selfintro .rightsection {
+    width: 75%;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+.listsection {
+    display: flex;
+    padding: 2rem;
+}
+
+#eduwork,
+#supportingdocuments {
+    background-color: #1f1f33;
+}
+
+.leftsection,
+.rightsection {
+    width: 50%;
+}
+.profilesection p {
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    color: #eee;
+}
+
+.profilesection p > span {
+    display: block;
+}
+
+.itemtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.info {
+    color: #bbb;
+}
+
+.datetype {
+    color: #f0a202;
+}
+
+#eduwork .rightsection a {
+    text-decoration: none;
+}
+
+#eduwork .rightsection a p {
+    padding: 0.5em;
+    margin: 0 0 0 -0.5em;
+}
+
+#eduwork .rightsection a:nth-child(2) p {
+    margin: 0.5em 0 0 -0.5rem;
+}
+
+.listsection div > p:last-child {
+    margin-bottom: 0;
+}
+
+#eduwork .rightsection p {
+    transition: 0.15s all ease-in-out;
+}
+
+#eduwork .rightsection p:hover {
+    background-color: #fff1;
+    cursor: pointer;
+}
+
+h2.reducedmargin {
+    margin-bottom: 0.6em;
+}
+
+#supportingdocuments {
+    padding: 2em 3em;
+}
+
+.document h3 {
+    display: inline-block;
+    margin: 0;
+}
+
+.document {
+    margin: 1em 0;
+}
+
+table {
+    width: 100%;
+    color: white;
+    border-collapse: collapse;
+}
+
+tr {
+    transition: 0.1s;
+}
+
+tr:hover {
+    background: #fff1;
+}
+
+td,
+th {
+    text-align: left;
+    border: 1px solid white;
+    padding: 0.5em;
+}
+
+th {
+    background: #f0a202;
+    color: #1f1f33;
+}
+
+.disabled {
+    pointer-events: none !important;
+}

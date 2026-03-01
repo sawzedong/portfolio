@@ -1,0 +1,446 @@
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: #212129;
+    overflow-x: hidden;
+}
+body.spacing {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    background: #ddf;
+}
+
+.loader {
+    align-self: center;
+    width: 180px;
+    height: 80px;
+    display: flex;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    background: #212129;
+    border-radius: 50%;
+    margin: 0 15px;
+    animation: jump 1s linear;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+}
+.caption {
+    align-self: center;
+    font-family: arial;
+    font-size: 20px;
+    color: #212129;
+    transition: 0.4s;
+}
+@keyframes jump {
+    0% {
+        margin-top: 0;
+    }
+    35% {
+        margin-top: -75px;
+    }
+    70% {
+        margin-top: 0px;
+    }
+}
+#b {
+    animation-delay: 0.2s;
+}
+#c {
+    animation-delay: 0.4s;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.transition-slow {
+    transition: 0.3s;
+}
+.transition-fast {
+    transition: 0.1s;
+}
+
+.circle.grow {
+    animation: grow 1.5s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0s !important;
+}
+
+section {
+    width: 100vw;
+}
+
+#landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+    min-height: 100vh;
+    padding: 5em 2em 2em 2em;
+}
+
+#landing div {
+    width: 45%;
+    margin: 0;
+}
+
+#landingimage {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5rem;
+}
+
+#landingtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#landingtext h2 {
+    width: 90%;
+}
+#landingtext h5 {
+    width: 80%;
+}
+
+#landingtext h2 {
+    font-size: 4rem;
+    color: #eee;
+    margin: 0.8rem 0 !important;
+}
+
+h5 {
+    font-size: 1.5rem;
+    color: #ddd;
+}
+
+#landingimage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    /* todo: add more stuff here so the background of the landing isn't so plain */
+}
+
+@media only screen and (max-width: 900px) {
+    #landing {
+        flex-direction: column;
+        padding-bottom: 6em;
+    }
+    #landing div {
+        width: 100%;
+    }
+    #landingtext,
+    #landingimage {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #landingimage img {
+        max-width: 500px;
+    }
+    #landingtext h5 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #landingtext h2 {
+        width: 100%;
+    }
+    #landingimage {
+        padding: 2rem;
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(150);
+    }
+}
+
+#name {
+    color: #f0a202;
+}
+
+#profile {
+    background-color: #1f1f33;
+}
+
+/* PROFILE */
+
+#profile {
+    width: 100%;
+    height: fit-content;
+    padding: 3rem;
+}
+
+#uppercontainer::-webkit-scrollbar {
+    display: none;
+}
+
+#uppercontainer {
+    width: 100%;
+    height: 30rem;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+#profilecontainer {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#education,
+#work {
+    height: 50%;
+    margin: 0;
+    display: flex;
+}
+
+#education p,
+#work p {
+    min-width: 20vw;
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#profilecontainer span {
+    line-height: 1.5rem;
+    margin: 0.1rem;
+    display: block;
+}
+
+/* GENERATING DOTS */
+#education p.empty::after,
+#work p.empty::before {
+    content: "";
+    border: 10px solid #f0a202;
+    border-radius: 10px;
+    position: relative;
+}
+#education p.empty::after {
+    top: 2rem;
+}
+#work p.empty::before {
+    top: -2rem;
+}
+
+/* GENERATING LINES */
+#education p.dot::after,
+#work p.dot::before {
+    content: "";
+    height: 1.5rem;
+    border: 1px solid #f0a202;
+    position: relative;
+}
+
+#education p.dot::after {
+    top: 1rem;
+}
+
+#work p.dot::before {
+    top: -1rem;
+}
+#education p {
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    color: #eee;
+}
+
+#work p {
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    color: #eee;
+}
+
+#education {
+    border-bottom: 3px solid white;
+}
+
+h3 {
+    font-size: 2.5rem;
+    color: #f0a202;
+    margin: 0 !important;
+}
+.h4 {
+    font-size: 1.5rem;
+    color: #f0a202;
+    font-weight: bold;
+}
+
+#overview {
+    line-height: 1.5em !important;
+}
+
+.school,
+.worklocation {
+    font-weight: bold;
+}
+
+.edutype,
+.year,
+.worktype {
+    color: #bbb;
+}
+
+#profileend a button,
+#projects a button {
+    background-color: #f0a202;
+    color: black;
+    padding: 0.6rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+#profileend {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    #profileend {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+}
+
+#profileend p {
+    color: #aaa;
+}
+#profileend div {
+    display: flex;
+}
+#profileend div button {
+    background: #0000;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    padding: 0 0.4em;
+    cursor: pointer;
+    transition: 0.1s;
+}
+#profileend div button:hover {
+    opacity: 0.9;
+}
+
+button:disabled {
+    opacity: 0.6 !important;
+    cursor: not-allowed !important;
+}
+
+/* featured projects */
+#projects {
+    padding: 3rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    color: white;
+}
+
+#projects > div {
+    padding: 1rem;
+}
+
+#projoverview {
+    font-size: 1.2rem;
+}
+
+#project-overview-holder {
+    width: 40%;
+}
+
+#project-holder {
+    width: 60%;
+}
+
+.featproj {
+    border-top: 1.5px solid white;
+    border-bottom: 1.5px solid white;
+    padding: 0.7rem;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    transition: 0.15s all ease-in-out;
+    margin-top: -1.5px;
+}
+
+.featproj:first-child {
+    margin-top: 0px !important;
+}
+
+.featproj:hover {
+    background-color: #fff1;
+    cursor: pointer;
+}
+
+.projecttext {
+    width: 70%;
+}
+
+.projectimgcont {
+    width: 30%;
+}
+
+.projimg {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.featproj span {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.featproj .date {
+    margin-bottom: 0.2rem;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.desc {
+    color: #bbb;
+}
+
+.date {
+    color: #f0a202;
+}

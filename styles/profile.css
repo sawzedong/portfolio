@@ -9,6 +9,20 @@ body {
 #selfintro {
     display: flex;
 }
+@media only screen and (max-width: 850px) {
+    #selfintro {
+        flex-direction: column;
+    }
+    #selfintro .leftsection,
+    #selfintro .rightsection {
+        width: 100% !important;
+        padding: 1rem 2rem !important;
+    }
+    #selfintro .leftsection img {
+        max-height: 50vh;
+        object-fit: contain;
+    }
+}
 .leftsection {
     padding: 1em 1.5em 1em 3em;
 }
@@ -29,6 +43,7 @@ body {
 #selfintro .rightsection {
     width: 75%;
     margin: 0;
+    text-align: justify;
 }
 
 h4 {
@@ -39,6 +54,22 @@ h4 {
 .listsection {
     display: flex;
     padding: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .listsection {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+    .listsection .leftsection,
+    .listsection .rightsection {
+        width: 100% !important;
+        padding: 1rem;
+    }
+    .listsection .rightsection {
+        padding-top: 2rem;
+    }
 }
 
 #eduwork,
@@ -144,4 +175,7 @@ th {
 
 .disabled {
     pointer-events: none !important;
+}
+#drivelink {
+    overflow-wrap: break-word;
 }

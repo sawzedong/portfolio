@@ -167,17 +167,13 @@ function loadFeaturedProjects() {
 
                 $("#project-holder").append(copy.append(contents));
 
-                $(`#card${i} .title`).text(`${jd[i]["name"]} ↗`);
+                $(`#card${i} .title`).text(`${jd[i]["name"]} ↗`);
                 $(`#card${i} .desc`).text(jd[i]["overview"]);
                 $(`#card${i} .date`).text(jd[i]["year"]);
 
-                $(`#card${i} .projimg`).prop(
-                    "src",
-                    `./projects/${jd[i]["id"]}/cover.jpg`,
-                );
-                $(`#card${i} .projimg`).prop(
-                    "alt",
-                    `Depiction of ${jd[i]["name"]}`,
+                $(`#card${i} .projectimgcont`).css(
+                    "background-image",
+                    `url("./projects/${jd[i]["id"]}/cover.jpg")`,
                 );
             }
         }

@@ -22,17 +22,18 @@ a {
 body {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+    font-family:
+        source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .dnone {
@@ -58,15 +59,14 @@ nav {
     padding-bottom: 1em;
     position: fixed;
     top: 0;
-    /* TODO: make the thing into a gradient (ff-00), then make it opaque as it is scrolled */
 }
 
 nav h1 {
     color: white;
 }
 
-#nav-right,
-#nav-left {
+.nav-right,
+.nav-left {
     display: flex;
     align-items: center;
 }
@@ -88,4 +88,56 @@ nav h1 {
 #navname {
     color: white;
     text-decoration: none;
+}
+
+#nav-right-small {
+    display: none;
+}
+#nav-right-small button {
+    color: white;
+    font-size: 2rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: transparent;
+    padding: 0rem 0.3rem 0.3rem 0.3rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+    #nav-right-big {
+        display: none;
+    }
+    #nav-right-small {
+        display: flex;
+    }
+}
+#nav-expanded {
+    position: absolute;
+    top: 4em;
+    left: 0;
+    transform: translateX(0);
+    pointer-events: auto;
+    transition: transform 0.3s ease-in-out;
+}
+#nav-expanded p {
+    width: 120vw;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+#nav-expanded p a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1em 2em;
+}
+#nav-expanded p:has(a.current) {
+    background-color: #f0a202;
+}
+#nav-expanded .navlink a.current {
+    color: black;
+}
+#nav-expanded.hide {
+    transform: translateX(100%);
+    pointer-events: none;
 }

@@ -373,6 +373,33 @@ button:disabled {
     color: white;
 }
 
+@media only screen and (max-width: 700px) {
+    #projects {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+    #project-overview-holder,
+    #project-holder {
+        width: 100% !important;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .featproj {
+        flex-direction: column-reverse;
+    }
+    .projecttext,
+    .projectimgcont {
+        width: 100% !important;
+    }
+    .projecttext {
+        padding-top: 0.5rem !important;
+    }
+    .projectimgcont {
+        aspect-ratio: 2 / 1;
+    }
+}
+
 #projects > div {
     padding: 1rem;
 }
@@ -398,6 +425,7 @@ button:disabled {
     text-decoration: none;
     transition: 0.15s all ease-in-out;
     margin-top: -1.5px;
+    align-items: stretch !important;
 }
 
 .featproj:first-child {
@@ -411,16 +439,14 @@ button:disabled {
 
 .projecttext {
     width: 70%;
+    padding: 0.2rem 0.5rem;
+    flex: 7;
 }
 
 .projectimgcont {
-    width: 30%;
-}
-
-.projimg {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
+    flex: 3 !important;
+    background-size: cover;
+    background-position: center;
 }
 
 .featproj span {
